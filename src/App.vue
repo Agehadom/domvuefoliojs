@@ -1,32 +1,106 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <v-app>
+    <v-app-bar
+      app
+      color="red"
+      dark
+    >
+      <!-- <div class="d-flex align-center">
+        <v-img
+          alt="Vuetify Logo"
+          class="shrink mr-2"
+          contain
+          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          transition="scale-transition"
+          width="40"
+        />
+
+        <v-img
+          alt="Vuetify Name"
+          class="shrink mt-1 hidden-sm-and-down"
+          contain
+          min-width="100"
+          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
+          width="100"
+        />
+      </div> -->
+
+      <v-spacer></v-spacer>
+
+    <div class="d-flex align-center">
+      <v-tabs
+        center-active
+        color="red"
+        >
+        <v-tab :to="'/'" exact>
+          Homebase
+        </v-tab>
+        <v-tab :to="'/about'" exact>
+          Projects
+        </v-tab>
+        <v-tab to="/temp">
+          Template View
+        </v-tab>
+        <v-tab to="/contact">
+          Contact Me
+        </v-tab>
+      </v-tabs>
     </div>
-    <router-view/>
-  </div>
+
+      <v-spacer></v-spacer>
+
+    </v-app-bar>
+
+    <v-main>
+      <transition name='monkey'>
+        <keep-alive>
+          <router-view></router-view>
+        </keep-alive>
+      </transition>
+      <HelloWorld/>
+      <charflair/>
+    </v-main>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style>
+.v-main {
+  background-color: #993344;
 }
 
-#nav {
-  padding: 30px;
+.charflair {
+  width: 400px;
+  height: 400px;
+  background-color: #498800;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+.monkey-enter-active {
+  transition: all .3s ease;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.monkey-leave-active {
+  transition: all .1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.monkey-enter, .monkey-leave-to {
+  transform: translateY(-100px);
+  opacity: 0;
 }
 </style>
+
+<script>
+// import HelloWorld from './components/HelloWorld';
+import charflair from './components/charflair';
+
+export default {
+  name: 'App',
+
+  components: {
+    // HelloWorld,
+    charflair
+  },
+
+  data: () => ({
+    //
+  }),
+};
+</script>
