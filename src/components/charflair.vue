@@ -1,9 +1,11 @@
 <template>
+  <main>
 <v-container class='imgcontain'>
   <div class='charbox mb-3'>
-    <img src="https://i.imgur.com/A1Rf77x.gif" alt="">
+    <img class='animegirl' src="https://i.imgur.com/A1Rf77x.gif" alt="">
   </div>
 </v-container>
+</main>
 </template>
 
 <style>
@@ -15,7 +17,7 @@
   right: 0px;
 }
 
-img {
+.animegirl {
   position: relative;
   top: 20px;
   width: 100%;

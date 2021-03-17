@@ -1,28 +1,21 @@
 <template>
   <v-container>
   <div class="home mb-3">
-    <h1 class='display-2 mb-3'>My Card</h1>
-    <h2 class='subheading display-3 mb-3'>Contact me via any of the platforms below</h2>
-  </div>
-  <div>
+    <h1 class='display-3'>My Card</h1>
+    <p class='subtitle'>Contact me via any of the platforms below</p>
     <mastercardu/>
   </div>
 </v-container>
 </template>
 
 <style>
-  .root {
-  background-color: red;
-  }
-
   .home {
-    /* background-color: #005599; */
     text-align: center;
   }
 </style>
 
 <script>
-import mastercardu from '../components/cardofthemaster.vue';
+import mastercardu from '../components/cardofthemaster.vue'
 export default {
   name: 'Contact',
 
