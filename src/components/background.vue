@@ -20,6 +20,15 @@ main {
   top: 0;
   left: 0;
   width: 100%;
+  height: auto;
+}
+
+.wave-bottom {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
 }
 
 </style>
@@ -36,7 +45,20 @@ const wave1 =
 anime({
 targets: '.wave-top > path',
 easing: 'linear',
-duration: 23000,
+duration: 16500,
+loop: true,
+d: [
+  { value: [wave1, wave2] },
+  { value: wave3 },
+  { value: wave4 },
+  { value: wave1 },
+],
+})
+
+anime({
+targets: '.wave-bottom > path',
+easing: 'linear',
+duration: 48000,
 loop: true,
 d: [
   { value: [wave1, wave2] },

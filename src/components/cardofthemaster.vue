@@ -76,9 +76,9 @@
   left: 0;
   right: 0;
   margin: auto;
-  background-color: #0088AA;
+  background-color: #112255;
   border-radius: 10px;
-  box-shadow: 1px 2px 5px #000000;
+  box-shadow: 0px 8px 2px #000000;
   /* box-shadow: inset 1px 2px 5px #000000; */
 }
 
@@ -94,12 +94,15 @@
 }
 
 .cardu-content {
+  color: white;
+  font-style: italic;
   display: flex;
+  background-color: #303090;
   flex-direction: column;
   text-align: center;
   height: 50%;
   margin: auto;
-  border-bottom: 1px solid #000000;
+  /* border-bottom: 1px solid #000000; */
   border-radius: 2px;
   position: relative;
 }

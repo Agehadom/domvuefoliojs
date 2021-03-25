@@ -1,12 +1,12 @@
 <template>
   <v-container>
-    <div class="about">
+    <div class="about introPanel">
       <h1 class='display-3 lineFix'>Welcome to my projects page</h1>
       <p class='subtitle'>Below are my projects, both WIP and completed. <br>More details are available upon interacting with the card below for each project!</p>
-      <div>
+    </div>
+    <div>
         <projectpanels/>
       </div>
-    </div>
   </v-container>
 </template>
 
