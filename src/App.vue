@@ -41,11 +41,11 @@
         <v-tab :to="'/'" exact>
           Homebase
         </v-tab>
-        <v-tab :to="'/about'" exact>
-          Projects
+        <v-tab :to="'/engineering'" exact>
+          Software Engineering
         </v-tab>
-        <!-- <v-tab to="/temp">
-          Template View
+        <!-- <v-tab to="/funnycolors">
+          Artistic Projects
         </v-tab> -->
         <v-tab to="/contact">
           Contact Me

@@ -12,6 +12,7 @@
     "@mdi/font": "5.9.55",
     "animejs": "^3.2.1",
     "core-js": "^3.6.5",
+    "pdfjs-dist": "^2.6.347",
     "register-service-worker": "^1.7.1",
     "roboto-fontface": "*",
     "v-show-slide": "^1.8.3",
