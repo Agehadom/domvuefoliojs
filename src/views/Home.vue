@@ -9,9 +9,14 @@
       <p class='subtitle>'>Hey, I'm Julius Osborne. I'm a full-stack developer, software engineer, 3D generalist and digital painter.<br><br>
         If you are here, you're probably here for the full-stack development part, aren't you? I am a recent graduate of General Assembly, where I completed a 3 month long, immersive course for full-stack development and developed 4 projects over those months. Some, I'm more proud of than others but you will find my most celebrated projects within the projects tab above.<br><br>
         I have a background in the art industry including but not limited to 3D modeling, sculpting, 2D character concepts and illustration as a freelance artist. Creation is my passion and I plan to use everything that I have learnt to good use. All of the things that I have absorbed over the past few years will hopefully continue to fuel my desire to continue creating and contribute my time to valuable projects</p><br>
+      <div class='resumebtn'>
         <h1 class='display-3'>Click here to see my resume</h1>
+      </div>
         <br><br>
         <p>This site is always growing! This is my hub for regular updates about my projects, contact information and other, more sensitive information.</p>
+    </div>
+    <div class="sidebar">
+      <pdfviewer/>
     </div>
   <v-layout row wrap>
     <v-flex xs12 md6>
@@ -102,10 +107,62 @@
   .techFont {
     font-style: italic;
   }
+
+  .sidebar {
+    top: 0;
+    right: 0;
+    position: fixed;
+    height: 800px;
+    width: 600px;
+  }
+
+  .resumebtn {
+    background-color: pink;
+  }
+
+  .resumebtn:hover {
+    background-color: red;
+  }
 </style>
 
 <script>
-export default {
+let $ = require("jquery")
 
+import pdfviewer from '../components/pdfviewer.vue'
+export default {
+  name: 'Home',
+
+  components: {
+    pdfviewer
+  },
+
+  data: () => {
+    return {
+
+    }
+  },
+  methods: {
+
+  },
+  beforeCreate () {
+    console.log('Before Create')
+    },
+  created () {
+    console.log('Page Created');
+  },
+  beforeMount () {
+    console.log('Mounting, daddy.');
+  },
+  mounted () {
+    $('.resumebtn').on('click', function() {
+      console.log('Poggers') })
+    console.log('Mounted, daddy.')
+  },
+  beforeUpdate () {
+    console.log('Updating...');
+  },
+  updated () {
+    console.log('Updated!');
+  }
 }
 </script>

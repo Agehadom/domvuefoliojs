@@ -45,7 +45,7 @@ const wave1 =
 anime({
 targets: '.wave-top > path',
 easing: 'linear',
-duration: 16800,
+duration: 18800,
 loop: true,
 d: [
   { value: [wave1, wave2] },
