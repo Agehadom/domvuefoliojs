@@ -24,7 +24,7 @@
   .display-3 {
     display: inline-block;
     font-style: italic;
-    margin: 2px;
+    margin: 6px;
     text-rendering: auto;
   }
 

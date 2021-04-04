@@ -29,7 +29,8 @@ ul {
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
-  opacity: 100%
+  opacity: 100%;
+  overflow-y: hidden;
 }
 
 li {
@@ -42,6 +43,7 @@ li {
   border: 1px solid #222;
   box-shadow: 0px 6px 2px #000000;
   margin: 10px;
+  overflow-y: hidden;
 }
 
 a {
@@ -86,14 +88,14 @@ a {
           show: false
         },
         {
-          name: 'To Be Announced',
+          name: 'To Be Created',
           desc: 'No project to add here right now, check now later!',
           link: '',
           img: 'https://i.imgur.com/ytbr6BW.png',
           show: false
         },
         {
-          name: 'To Be Announced',
+          name: 'To Be Created',
           desc: 'No project to add here right now, check now later!',
           link: '',
           img: 'https://i.imgur.com/ytbr6BW.png',

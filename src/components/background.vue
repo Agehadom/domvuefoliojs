@@ -1,22 +1,20 @@
 <template>
 <v-container>
-  <div>
-  </div>
 </v-container>
 </template>
 
 <style>
 * {
-  overflow-y: hidden;
+  overflow-y: visible;
 }
 
 main {
   height: 100%;
-  /* overflow-y: hidden; */
 }
 
 .wave-top {
-  position: absolute;
+  overflow: hidden;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -24,11 +22,20 @@ main {
 }
 
 .wave-bottom {
-  position: absolute;
+  overflow-y: hidden;
+  position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   height: auto;
+}
+
+.wavewrapper {
+  background-color: red;
+}
+
+svg {
+  background-color: #303090;
 }
 
 </style>
@@ -45,7 +52,7 @@ const wave1 =
 anime({
 targets: '.wave-top > path',
 easing: 'linear',
-duration: 18800,
+duration: 18500,
 loop: true,
 d: [
   { value: [wave1, wave2] },

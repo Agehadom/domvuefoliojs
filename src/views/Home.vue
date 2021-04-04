@@ -15,12 +15,12 @@
         <br><br>
         <p>This site is always growing! This is my hub for regular updates about my projects, contact information and other, more sensitive information.</p>
     </div>
-    <div class="sidebar">
+    <div class="viewport">
       <pdfviewer/>
     </div>
   <v-layout row wrap>
     <v-flex xs12 md6>
-      <div class='introPanel home techPanel'>
+      <div class='introPanel2 home techPanel'>
         <h1 class='techFont'>Artistic Technologies</h1>
         <div class='techContainer ma-2'>
           <img class='techSpread' src="https://img.icons8.com/color/100/000000/blender-3d.png"/>
@@ -35,7 +35,7 @@
     </v-flex>
 
     <v-flex xs12 md6>
-      <div class='introPanel home techPanel'>
+      <div class='introPanel2 home techPanel'>
         <h1 class='techFont'>Software Engineering Technologies and Languages</h1>
         <div class='techContainer ma-2'>
           <img class='techSpread' src="https://icongr.am/devicon/html5-original.svg?size=100color=currentColor">
@@ -83,8 +83,20 @@
     box-shadow: 0px 2px 4px #000000;
   }
 
+  .introPanel2 {
+    background-color: #112255;
+    border-radius: 4px;
+    width: auto;
+    margin: 10px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    color: #FFFBFC;
+    box-shadow: 0px 2px 4px #000000;
+  }
+
   .techContainer {
     display: flex;
+    align-items: center;
     justify-content: center;
     position: inherit;
     top: 0;
@@ -102,31 +114,42 @@
     /* background-color: green; */
     height: 100%;
     margin: 2px;
+    display: inline-block;
   }
 
   .techFont {
     font-style: italic;
   }
 
-  .sidebar {
-    top: 0;
+  .viewport {
+    display: flex;
+    opacity: 0;
     right: 0;
-    position: fixed;
-    height: 800px;
-    width: 600px;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    position: absolute;
+    justify-content: center;
+    pointer-events: none;
+    color: white;
+  }
+
+  .viewport.events {
+    pointer-events: all;
   }
 
   .resumebtn {
-    background-color: pink;
+    border-radius: 10px;
   }
 
   .resumebtn:hover {
-    background-color: red;
+    background-color: #303090;
   }
 </style>
 
 <script>
 let $ = require("jquery")
+import anime from 'animejs/lib/anime.es.js'
 
 import pdfviewer from '../components/pdfviewer.vue'
 export default {
@@ -146,17 +169,44 @@ export default {
   },
   beforeCreate () {
     console.log('Before Create')
+
     },
   created () {
-    console.log('Page Created');
+    console.log('Page Created')
+
   },
   beforeMount () {
-    console.log('Mounting, daddy.');
+    console.log('Mounting, daddy.')
   },
   mounted () {
-    $('.resumebtn').on('click', function() {
-      console.log('Poggers') })
     console.log('Mounted, daddy.')
+
+    $('.resumebtn').on('click', function() {
+      console.log('Poggers')
+
+      $('.viewport').addClass('events')
+      anime({
+      targets: '.viewport',
+      opacity: '1',
+      easing: 'easeInOutQuad',
+      duration: 500,
+      // begin: function() {
+      //   document.querySelection('.viewport').style.display = 'block'
+      // }
+      })
+    })
+
+    $('.closebtn').on('click', function() {
+
+      $('.viewport').removeClass('events')
+
+      anime({
+        targets: '.viewport',
+        opacity: '0',
+        easing: 'easeInOutQuad',
+        duration: 500
+      })
+    })
   },
   beforeUpdate () {
     console.log('Updating...');
