@@ -1,5 +1,7 @@
 module.exports = {
-  publicPath: '/domvuefoliojs/'
+  publicPath: process.env.NODE_ENV === 'production'
+  ? '/domvuefoliojs/'
+  : '/',
   transpileDependencies: [
     'vuetify'
   ]
