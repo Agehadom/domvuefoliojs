@@ -74,7 +74,7 @@
   .introPanel {
     background-color: #112255;
     border-radius: 4px;
-    opacity: 100%;
+    opacity: 1;
     /* width: auto; */
     margin: 40px auto;
     padding: 0 20px;

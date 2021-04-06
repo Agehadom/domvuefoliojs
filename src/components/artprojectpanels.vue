@@ -16,7 +16,7 @@
 <style>
 .pPanel {
   border-radius: 10px;
-  opacity: 100%;
+  opacity: 1;
   width: 100%;
   max-width: 1200px;
   margin: 40px auto;
@@ -29,7 +29,7 @@ ul {
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
-  opacity: 100%
+  opacity: 1
 }
 
 li {
