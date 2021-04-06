@@ -25,11 +25,11 @@
         <div class='techContainer ma-2'>
           <img class='techSpread' src="https://img.icons8.com/color/100/000000/blender-3d.png"/>
           <img class='techSpread' src="https://img.icons8.com/color/100/000000/adobe-photoshop.png"/>
-          <img class='techSpread' src="https://cdn.onlinewebfonts.com/svg/img_437112.png" width="100" height="100">
-          <img class='techSpread' src="https://cdn.worldvectorlogo.com/logos/substance-painter.svg?" width="100" height="100">
-          <img class='techSpread' src="https://cdn.worldvectorlogo.com/logos/unity-69.svg?" width="100" height="100">
-          <img class='techSpread' src="https://iconape.com/wp-content/png_logo_vector/marvelous-designer-logo.png" width="100" height="100">
-          <img class='techSpread' src="https://i.imgur.com/yfQHtCX.png" width="100" height="100">
+          <img class='techSpread' src="https://cdn.onlinewebfonts.com/svg/img_437112.png" width="100" height="100"/>
+          <img class='techSpread' src="https://cdn.worldvectorlogo.com/logos/substance-painter.svg?" width="100" height="100"/>
+          <img class='techSpread' src="https://cdn.worldvectorlogo.com/logos/unity-69.svg?" width="100" height="100"/>
+          <img class='techSpread' src="https://iconape.com/wp-content/png_logo_vector/marvelous-designer-logo.png" width="100" height="100"/>
+          <img class='techSpread' src="https://i.imgur.com/yfQHtCX.png" width="100" height="100"/>
         </div>
       </div>
     </v-flex>
@@ -38,21 +38,21 @@
       <div class='introPanel2 home techPanel'>
         <h1 class='techFont'>Software Engineering Technologies and Languages</h1>
         <div class='techContainer ma-2'>
-          <img class='techSpread' src="https://icongr.am/devicon/html5-original.svg?size=100color=currentColor">
-          <img class='techSpread' src="https://icongr.am/devicon/css3-original.svg?size=100color=currentColor">
-          <img class='techSpread' src="https://icongr.am/devicon/javascript-original.svg?size=100color=currentColor">
-          <img class='techSpread' src="https://icongr.am/devicon/sass-original.svg?size=100color=currentColor">
-          <img class='techSpread' src="https://icongr.am/devicon/postgresql-original.svg?size=100color=currentColor">
-          <img class='techSpread' src="https://icongr.am/devicon/python-original.svg?size=100color=currentColor">
-          <img class='techSpread' src="https://icongr.am/devicon/git-original.svg?size=100color=currentColor">
-          <img class='techSpread' src="https://icongr.am/devicon/bootstrap-plain.svg?size=100color=583e80">
-          <img class='techSpread' src="https://icongr.am/devicon/nodejs-original.svg?size=100color=583e80">
-          <img class='techSpread' src="https://icongr.am/devicon/express-original.svg?size=100color=949494">
-          <img class='techSpread' src="https://icongr.am/devicon/atom-original.svg?size=100color=currentColor">
-          <img class='techSpread' src="https://icongr.am/devicon/react-original.svg?size=100color=currentColor">
-          <img class='techSpread' src="https://icongr.am/devicon/heroku-original.svg?size=100color=currentColor">
-          <img class='techSpread' src="https://icongr.am/devicon/grunt-original.svg?size=100color=currentColor">
-          <img class='techSpread' src="https://icongr.am/devicon/django-original.svg?size=100color=currentColor">
+          <img class='techSpread' src="https://icongr.am/devicon/html5-original.svg?size=100color=currentColor"/>
+          <img class='techSpread' src="https://icongr.am/devicon/css3-original.svg?size=100color=currentColor"/>
+          <img class='techSpread' src="https://icongr.am/devicon/javascript-original.svg?size=100color=currentColor"/>
+          <img class='techSpread' src="https://icongr.am/devicon/sass-original.svg?size=100color=currentColor"/>
+          <img class='techSpread' src="https://icongr.am/devicon/postgresql-original.svg?size=100color=currentColor"/>
+          <img class='techSpread' src="https://icongr.am/devicon/python-original.svg?size=100color=currentColor"/>
+          <img class='techSpread' src="https://icongr.am/devicon/git-original.svg?size=100color=currentColor"/>
+          <img class='techSpread' src="https://icongr.am/devicon/bootstrap-plain.svg?size=100color=583e80"/>
+          <img class='techSpread' src="https://icongr.am/devicon/nodejs-original.svg?size=100color=583e80"/>
+          <img class='techSpread' src="https://icongr.am/devicon/express-original.svg?size=100color=949494"/>
+          <img class='techSpread' src="https://icongr.am/devicon/atom-original.svg?size=100color=currentColor"/>
+          <img class='techSpread' src="https://icongr.am/devicon/react-original.svg?size=100color=currentColor"/>
+          <img class='techSpread' src="https://icongr.am/devicon/heroku-original.svg?size=100color=currentColor"/>
+          <img class='techSpread' src="https://icongr.am/devicon/grunt-original.svg?size=100color=currentColor"/>
+          <img class='techSpread' src="https://icongr.am/devicon/django-original.svg?size=100color=currentColor"/>
           <img class='techSpread' src="https://img.icons8.com/ios-filled/100/000000/c-sharp-logo.png"/>
         </div>
       </div>
