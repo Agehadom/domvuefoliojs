@@ -101,20 +101,26 @@
     position: inherit;
     top: 0;
     left: 0;
+    /* object-fit: scale-down; */
+    flex-wrap: wrap;
   }
 
-  .techSpread {
+  .techContainer img {
+    margin: 2px;
+    height: auto;
+  }
+
+  /* .techSpread {
     display: flex;
     margin: 4px;
     width: 100%;
     height: 100%;
-  }
+  } */
 
   .techPanel {
     /* background-color: green; */
     height: 100%;
     margin: 2px;
-    display: inline-block;
   }
 
   .techFont {
