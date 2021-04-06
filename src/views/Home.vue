@@ -8,7 +8,7 @@
       <h1 class='display-3'>About me</h1>
       <p class='subtitle>'>Hey, I'm Julius Osborne. I'm a full-stack developer, software engineer, 3D generalist and digital painter.<br><br>
         If you are here, you're probably here for the full-stack development part, aren't you? I am a recent graduate of General Assembly, where I completed a 3 month long, immersive course for full-stack development and developed 4 projects over those months. Some, I'm more proud of than others but you will find my most celebrated projects within the projects tab above.<br><br>
-        I have a background in the art industry including but not limited to 3D modeling, sculpting, 2D character concepts and illustration as a freelance artist. Creation is my passion and I plan to use everything that I have learnt to good use. All of the things that I have absorbed over the past few years will hopefully continue to fuel my desire to continue creating and contribute my time to valuable projects</p><br>
+        I have a background in the art industry including but not limited to 3D modeling, sculpting, 2D character concepts and illustration as a freelance artist. Creation is my passion and I plan to use everything that I have learnt to good use. All of the things that I have absorbed over the past few years will hopefully continue to fuel my desire to continue creating and contribute my time to valuable projects. Some tabs for this site may be hidden for construction.</p><br>
       <div class='resumebtn'>
         <h1 class='display-3'>Click here to see my resume</h1>
       </div>

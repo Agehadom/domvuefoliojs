@@ -78,7 +78,7 @@
   margin: auto;
   background-color: #112255;
   border-radius: 10px;
-  box-shadow: 0px 8px 2px #000000;
+  box-shadow: 0px 8px 6px #000000;
   /* box-shadow: inset 1px 2px 5px #000000; */
 }
 
@@ -156,7 +156,24 @@ a {
 </style>
 
 <script>
+  import anime from 'animejs/lib/anime.es.js'
   export default {
     name: 'mastercardu',
+
+    mounted () {
+      anime({
+      targets: '.cardu',
+      easing: 'easeInOutQuad',
+      duration: 2000,
+      direction: 'alternate',
+      translateX: -10,
+      translateY: 20,
+      loop: true,
+      keyframes: [
+        {translateX: 20},
+        {translateX: -20},
+      ]
+      })
+    }
   }
 </script>

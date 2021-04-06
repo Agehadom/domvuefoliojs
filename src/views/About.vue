@@ -19,6 +19,7 @@
     font-size: 18px;
     margin: 2px;
     line-height: normal;
+    padding: 4px;
   }
 
   .display-3 {
