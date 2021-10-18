@@ -1,5 +1,4 @@
 <template>
-  <main>
     <div class='pPanel'>
       <ul>
         <li v-for='pPanel in pPanels' :key='pPanel.id' v-on:click='pPanel.show = !pPanel.show'>
@@ -10,7 +9,6 @@
         </li>
       </ul>
     </div>
-  </main>
 </template>
 
 <style>
@@ -38,12 +36,24 @@ li {
   background-color: #112255;
   flex-grow: 1;
   flex-basis: 300px;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 30px;
   border: 1px solid #222;
   box-shadow: 0px 6px 2px #000000;
   margin: 10px;
   overflow-y: hidden;
+}
+
+.display-3 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2px;
+  padding: 2px;
 }
 
 a {
@@ -88,16 +98,16 @@ a {
           show: false
         },
         {
-          name: 'To Be Created',
-          desc: 'No project to add here right now, check now later!',
+          name: 'Populus Ignotus',
+          desc: 'Populus Ignotus is a React, full-stack application that allows people to connect to each other with randomly generated usernames in a world space to relax.',
           link: '',
           img: 'https://i.imgur.com/ytbr6BW.png',
           show: false
         },
         {
-          name: 'To Be Created',
-          desc: 'No project to add here right now, check now later!',
-          link: '',
+          name: 'JS Triad',
+          desc: 'Triad is a rhythm game completely made using Javascript, HTML5, CSS, ThreeJS and RythmJS for a browser-based delve into music',
+          link: 'https://github.com/Agehadom/JS-Triad',
           img: 'https://i.imgur.com/ytbr6BW.png',
           show: false
         },

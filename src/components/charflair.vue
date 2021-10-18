@@ -1,19 +1,17 @@
 <template>
-  <main>
-<v-container class='imgcontain'>
+<v-container class='imgcontain-anime'>
   <div class='charbox mb-3'>
     <img class='animegirl' src="https://i.imgur.com/A1Rf77x.gif" alt="">
   </div>
 </v-container>
-</main>
 </template>
 
 <style>
 .charbox {
-  position: absolute;
-  max-width: 250px;
+  position: fixed;
+  max-width: 100px;
   overflow: hidden;
-  bottom: -10px;
+  bottom: -20px;
   right: 0px;
 }
 

@@ -14,6 +14,9 @@
       </div>
         <br><br>
         <p>This site is always growing! This is my hub for regular updates about my projects, contact information and other, more sensitive information.</p>
+        <br><br>
+        <p>Last Updated: 10/18/2021</p>
+        <br><br>
     </div>
     <div class="viewport">
       <pdfviewer/>
@@ -64,7 +67,7 @@
 
 <style>
   .root {
-  background-color: red;
+  background-color: rgb(255, 255, 255);
   }
 
   .home {

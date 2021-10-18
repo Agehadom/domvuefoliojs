@@ -101,7 +101,7 @@
 </style>
 
 <script>
-// import charflair from './components/charflair'
+import charflair from './components/charflair'
 import background from './components/background'
 
 
@@ -109,7 +109,7 @@ export default {
   name: 'App',
 
   components: {
-    // charflair,
+    charflair,
     background
   },
 

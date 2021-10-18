@@ -1,5 +1,4 @@
 <template>
-  <main>
     <v-container class='imgcontain'>
         <div class='cardu'>
           <div class='cardu-content'>
@@ -63,12 +62,11 @@
             </v-layout>
         </div>
     </v-container>
-  </main>
 </template>
 
 <style>
 .cardu {
-  position: absolute;
+  position: sticky;
   height: 270px;
   width: 530px;
   top: 0;
@@ -78,7 +76,7 @@
   margin: auto;
   background-color: #112255;
   border-radius: 10px;
-  box-shadow: 0px 8px 6px #000000;
+  box-shadow: 2px 8px 2px #000000;
   /* box-shadow: inset 1px 2px 5px #000000; */
 }
 
@@ -151,6 +149,13 @@ p {
 
 a {
   text-decoration: none;
+}
+
+.imgcontain {
+  height: auto;
+  width: 100%;
+  /* background-color: chartreuse; */
+  overflow-y: visible;
 }
 
 </style>

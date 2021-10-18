@@ -1,5 +1,4 @@
 <template>
-  <main>
 <v-container class='canvaswrapper introPanel'>
   <v-flex>
   <div class='canvastab'>
@@ -12,7 +11,6 @@
   </div>
   </v-flex>
 </v-container>
-</main>
 </template>
 
 <style>
@@ -57,16 +55,16 @@
   display: flex;
   border: 1px solid black;
   direction: ltr;
-  min-height: 100%;
+  min-height: auto;
   width: 100%;
 }
 
 .canvas iframe {
   margin: 2px;
-  background-color: red;
+  background-color: rgb(255, 255, 255);
   width: 100%;
   min-height: 100%;
-  height: 1000px;
+  height: 1200px;
 }
 
 </style>

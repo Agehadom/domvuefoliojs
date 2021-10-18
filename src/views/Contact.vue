@@ -3,8 +3,8 @@
   <div class="home mb-3 introPanel">
     <h1 class='display-3'>My Card</h1>
     <p class='subtitle'>Contact me via any of the platforms below</p>
-    <mastercardu/>
   </div>
+  <mastercardu/>
 </v-container>
 </template>
 
